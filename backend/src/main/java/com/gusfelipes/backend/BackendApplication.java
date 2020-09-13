@@ -13,7 +13,7 @@ public class BackendApplication {
 	@Bean
 	public WebClient webclient(WebClient.Builder builder) {
 		return builder.baseUrl("https://api.github.com").build();
-		}
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(BackendApplication.class, args);
