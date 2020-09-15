@@ -1,25 +1,14 @@
 package com.gusfelipes.backend.model;
 
-import java.io.Serializable;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-public class Repositories implements Serializable {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Repositories {
 
 	private String name;
 	private String description;
 
 	public Repositories() {
-		super();
-	}
-
-	public Repositories(String name, String description) {
-		super();
-		this.name = name;
-		this.description = description;
 	}
 
 	public String getName() {
@@ -36,6 +25,11 @@ public class Repositories implements Serializable {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	@Override
+	public String toString() {
+		return "repo{" + "name=" + name + ", description='" + description + '\'' + '}';
 	}
 
 }
