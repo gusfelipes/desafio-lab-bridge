@@ -1,0 +1,9 @@
+li.repo-item {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.02);
+  padding: 30px 20px;
+  width: auto;
+  margin-bottom: 10px;
+  list-style: none;
+}

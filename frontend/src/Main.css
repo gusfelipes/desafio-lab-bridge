@@ -1,0 +1,28 @@
+main {
+  flex: 1;
+}
+
+main ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+li.repo-item {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.02);
+  padding: 30px 20px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+  main ul {
+    grid-template-columns: 1fr;
+  }
+
+  li.dev-item {
+    width: 100%;
+  }
+}
