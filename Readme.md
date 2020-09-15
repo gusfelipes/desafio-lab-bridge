@@ -11,9 +11,13 @@ Para rodar executar o projeto em sua máquina, você deve ir na pasta **backend*
 
     java -jar target/backend-0.0.1-SNAPSHOT.jar
 
-Depois dentro da pasta **frontend** é só rodar o comando 
+Depois dentro da pasta **frontend** você precisa instalar o projeto com o comando
 
-    yarn start
+    yarn install ou npm install
+    
+Depois de instalado é só rodar o comando 
+
+    yarn start ou npm start
 
 Com isso o projeto vai ser aberto no seu navegador padrão no caminho 
 
