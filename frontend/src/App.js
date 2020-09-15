@@ -8,7 +8,6 @@ import "./Header.css";
 import "./Main.css";
 
 import RepoItem from "./components/RepoItem/index.js";
-import { Link } from "react-router-dom";
 
 function App() {
   const [repos, setRepos] = useState([]);
@@ -16,9 +15,7 @@ function App() {
 
   async function handleSearchRepos(e) {
     e.preventDefault();
-    console.log(user);
     const response = await api.get(`/repos/${user}`);
-    console.log(response);
     setRepos(response.data);
   }
 
@@ -43,9 +40,7 @@ function App() {
         <div className="repos-list">
           <ul>
             {repos.map((repo) => (
-              <Link to="/">
-                <RepoItem key={repo.id} repo={repo} />
-              </Link>
+              <RepoItem key={repo.id} repo={repo} />
             ))}
           </ul>
         </div>

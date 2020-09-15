@@ -2,7 +2,6 @@ import React from "react";
 import "./style.css";
 
 function RepoItem({ repo }) {
-  console.log(repo);
   return (
     <li className="repo-item">
       <p>
